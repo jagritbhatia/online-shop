@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,3 +130,6 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR/'media'
 
 CART_SESSION_ID = 'cart'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51Nhb6oSCbdgyWlmn8bmmypaW94fm5C1Vgt5dcZffj7maJ8D5W3qNqLwoi8C1dBFgYrmOAUxjQ5WQlM8hQj3vt76w00YmDFqwl8' # Publishable key
+STRIPE_SECRET_KEY = 'sk_test_51Nhb6oSCbdgyWlmnrRv9GmUDMjFbjSLmgQLe6RKIBXvWIbcolQSlBuqXY1Mbnq3I2qqNRJNfWDOEogB9xT4ovaS300fm4ASrlH' # Secret key
+STRIPE_API_VERSION = '2022-08-01'
